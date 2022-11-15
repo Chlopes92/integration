@@ -217,7 +217,6 @@ span {
 
 .testimony{
     background-color: var(--white);
-    border: 2px solid black;
     min-height: auto;
     width: 77.9vw;
     display: flex;
