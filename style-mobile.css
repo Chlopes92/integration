@@ -1,0 +1,186 @@
+@media (max-width: 510px) {
+    
+    hr{
+        display: none;
+    }
+
+    .menuMobile img{
+        margin: 20px 16px 0 0;
+    }
+
+    .burgerIcon{
+        position: absolute;
+        right: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .witness, .impact, .partner, .learner{
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .burgerIcon{
+        display: block;
+        cursor: pointer;
+        margin: 0px 16px 0 0;
+    }
+
+    .line{
+        display: block;
+        width: 40px;
+        height: 6px;
+        border-radius: 61px;
+        margin: 5px;
+        background-color: var(--red);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* .active{
+        height: 100vh;
+    } */
+
+    /*.navLinks{
+        overflow: hidden;
+        margin-top: 98px;
+        height: 0;
+    } */
+
+    .burgerIcon.active .line:nth-child(2){
+        opacity: 0;
+    }
+
+    .burgerIcon.active .line:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .burgerIcon.active .line:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    
+    .welcome button{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 1%;
+    }
+
+    .welcome .img{
+        display: none;
+    }
+
+    .welcome .text{
+        width: 100%;
+    }
+
+    .welcome, .container, .testimony{
+        margin: 0;
+        width:  100%;
+    }
+
+    .welcome{
+        margin: 65px 0px 0px 0px
+    }
+
+    .menu li{
+        display: none;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .container p{
+        font-size: 16px;
+    }
+
+    .testimony .portrait{
+        display: none;
+    }
+
+    .apprentis{
+        background-color: var(--white);
+        width: 124%;
+        height: 21vh;
+    }
+
+    .learner .apprentis .flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 31%;
+        height: 35%;
+        position: absolute;
+        left: 0%;
+    } 
+
+    .learner h3, .learner p{
+    padding: 1%;
+    }
+
+    .learner button{
+        width: 100%;
+        margin: 0;
+    }
+
+    .partner .testimony{
+        margin: 0;
+    }
+
+    .partner{
+        width: auto;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    article{
+        min-width: 100%;
+    }
+
+   .articleOne p{
+    padding: 14% 6%;
+   }
+
+   article span{
+    font-size: 36px;
+   }
+
+    footer{
+        height: 139.3vh;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-top: 167px;
+        padding-left: 0%;
+    }
+
+    footer ul li{
+        margin: 5%;
+    }
+
+    footer .socialNetwork{
+        padding-top: 487px;
+        margin-left: -30%;
+    }
+
+    footer .logoFooter{
+        padding-top: 787px;
+        margin-left: -10%;
+    }
+
+    footer .newsletter{
+        margin: 42px;
+        left: -3%;
+    }
+}

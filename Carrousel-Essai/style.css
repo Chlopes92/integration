@@ -1,0 +1,54 @@
+.quotationMarks {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 96px;
+}
+
+.test{
+    width: 70%;
+    margin: 2%;
+}
+
+.portrait{
+    width: 30%;
+}
+
+.portrait p{
+    text-align: center;
+}
+
+.testimony{
+    background-color: var(--white);
+    border: 2px solid black;
+    min-height: auto;
+    width: 77.9vw;
+    display: flex;
+}
+
+.testimony .student{
+    height: 46.6vh;
+    margin: 15% 2% 5% 15%;
+}
+
+
+.witness,
+.partner {
+    margin: 2.5% 7.9%;
+}
+
+
+.slider{
+    
+}
+
+.slide {
+
+  }
+
+  .portrait a:hover, .portrait a:focus{
+    
+  }
+
+.portrait a{
+    
+}

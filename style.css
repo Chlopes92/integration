@@ -1,0 +1,433 @@
+/* Variables */
+:root {
+    --lightgray: #f1f5f8;
+    --black: #000000;
+    --red: #cf3034;
+    --white: #ffffff;
+
+    --logoPartner-width: 80vw;
+    --logoPartner-height: 20vh;
+
+    --logoPartner-elements-displayed: 10;
+    --logoPartner-element-width: calc(var(--logoPartner-width) / var(--logoPartner-elements-displayed));
+    --logoPartner-animation-duration: calc(var(--logoPartner-elements) * 3s);
+}
+
+* {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    height: 25px;
+    top: 35px;
+}
+
+body {
+    background-color: var(--lightgray);
+}
+
+h1 {
+    color: var(--red);
+    margin-top: 34px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+h3{ 
+    margin-top: 40px;
+}
+
+hr {
+    border: 1px solid white;
+    width: 80vw;
+    margin-top: 42px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* NavBar */
+nav {
+    width: 76%;
+    height: 5.4%;
+    margin: 2.3% 34.2% 5.5% 7.9%;
+}
+
+/* Header  */
+.buttonWhite,
+.button {
+    background-color: var(--white);
+    color: var(--red);
+    height: 52px;
+    width: 193px;
+    border: 2px solid var(--red);
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.arrow-down>a::after {
+    content: "▼";
+    font-size: 15px;
+}
+
+.button {
+    background-color: var(--red);
+    color: var(--white);
+    
+}
+
+.text {
+    width: 50%;
+    margin: auto;
+    padding-left: 4%;
+}
+
+.img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.img img {
+    margin: 7% 4.9%;
+    width: 95%;
+}
+
+
+.menu, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 4vw;
+    font-size: 18px;
+}
+
+
+.welcome {
+    background-color: var(--white);
+    display: flex;
+    min-height: 72vh;
+    min-width: 78vw;
+    margin: 2.5% 7.9% ;
+}
+
+.welcome p{
+    margin-top: 12px;
+}
+
+.welcome button{
+    margin-top: 49px;
+}
+
+#closeBtn{
+    display: none;
+}
+
+/* .active{
+    height: 100vh;
+} */
+
+/* Rubrique Impact */
+article {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+span {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72.58px;
+    color: var(--red);
+    text-align: center;
+    padding: 2% 5% 0% 2%;
+}
+
+.impact{
+    min-width: 78vw;
+    height: 59vh;
+    margin: 6.5% 7.9% 6.5%;
+
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    flex-direction: row; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 70%;
+    max-width: 70%;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.container p {
+    font-size: 24px;
+    padding: 1% 2% 0% 5%;
+    padding-top: 0%;
+}
+
+.container a{
+    padding-left: 60%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.articleOne {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.articleOne p{
+    padding: 30% 10%;
+}
+
+.quotationMarks {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 96px;
+}
+
+.test{
+    width: 70%;
+    margin: 2%;
+}
+
+.portrait{
+    width: 30%;
+}
+
+.portrait p{
+    text-align: center;
+}
+
+.testimony{
+    background-color: var(--white);
+    border: 2px solid black;
+    min-height: auto;
+    width: 77.9vw;
+    display: flex;
+}
+
+.testimony img{
+    height: 46.6vh;
+    margin: 15% 2% 5% 15%;
+}
+
+.witness,
+.partner {
+    margin: 2.5% 7.9%;
+}
+
+/* Rubrique Apprentis */
+.apprentis {
+    background: url(img/img-apprentis.png) no-repeat center;
+    height: 54.5vh;
+    width: 77.9vw;
+    margin: 0;
+}
+
+.learner {
+    width: 77.9vw;
+    height: 65.5vh;
+    margin: 6.5% 7.9% 6.5%;
+}
+
+.learner h3, .learner p{
+    padding: 4%;
+}
+
+.learner button{
+    margin-left: 4%;
+    margin-top: 15px;
+}
+
+.fondWhite {
+    width: 34.5vw;
+    height: 45.2vh;
+    position: absolute;
+    object-fit: contain;
+    left: 52%;
+}
+
+.fondWhite,
+.logoPartner {
+    background-color: var(--white);
+}
+
+.partner {
+    width: 78vw;
+    height: 43.8vh;
+}
+
+.logoPartner {
+    width: var(--logoPartner-width);
+    height: var(--logoPartner-height);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logoPartner::before, .logoPartner::after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marqueContent{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--logoPartner-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--logoPartner-element-width) * var(--logoPartner-elements))); }
+}
+
+.marqueContent li{
+  flex-shrink: 0;
+  width: var(--marque-element-width);
+  max-height: 100%;
+  white-space: wrap;
+}
+
+.marqueContent li img{
+  width: 100%;
+  margin: 10% 20% 10% 20%;
+  padding: 10%;
+}
+
+
+.partner img {
+    width: 6.7vw;
+    height: 14vh;
+}
+
+/* Footer */
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    height: 51vh;
+    margin-top: 100px;
+}
+
+footer h2 {
+    margin-bottom: 6px;
+}
+
+footer ul {
+    margin: 7%;
+}
+
+footer ul li {
+    margin: 6% 0% 2% 1%;
+    margin-top: 306px;
+}
+
+footer input {
+    background: var(--red);
+    border: 1px solid var(--white);
+    width: 315px;
+    height: 32px;
+}
+
+footer a img {
+    position: absolute;
+    left: 311px;
+}
+
+footer ::placeholder {
+    color: var(--white);
+}
+
+footer .logoFooter {
+    position: absolute;
+    margin-top: 50px;
+    left: 23%;
+}
+
+footer .socialNetwork {
+    position: absolute;
+    left: 36%;
+    margin-top: 206px;
+}
+
+footer .newsletter {
+    position: absolute;
+    left: 55%;
+    margin-top: 37px;
+}
+
+#email {
+    padding: 0;
+}
+
+/* .body{
+    height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+  /* }
+  
+  .slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+
+  .btn-prev, .btn-next{
+    color: var(--red);
+    font-weight: bold;
+    font-size: x-large;
+  } */
